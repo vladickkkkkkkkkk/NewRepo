@@ -28,5 +28,14 @@ namespace praktika1._1
                               $"Адрес: {Adress}\n" +
                               $"Год открытия: {Date}\n");
         }
+        public void Input()
+        {
+            Console.Write("Введите название: ");
+            this.Name = Console.ReadLine();
+            Console.Write("Введите адрес: ");
+            this.Adress = Console.ReadLine();
+            Console.Write("Введите год открытия: ");
+            this.Date = Convert.ToInt32(Console.ReadLine());
+        }
     }
 }
